@@ -1,4 +1,4 @@
 var files_dup =
 [
-    [ "Core", "dir_c6310732a22f63c0c2fc5595561e68f1.html", "dir_c6310732a22f63c0c2fc5595561e68f1" ]
+    [ "CUBEIDE-Workspace", "dir_b3e7014c0d4d42ac94ffd161168a7374.html", "dir_b3e7014c0d4d42ac94ffd161168a7374" ]
 ];

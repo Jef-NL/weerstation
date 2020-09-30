@@ -25,6 +25,8 @@ char* hostIP = "";
 /**Hal Tick Delay variable**/
 uint32_t tickdelay = 0;
 
+
+
 /**
   * @brief  Function initializing the ESP.
   *
