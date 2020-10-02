@@ -1,6 +1,8 @@
 var searchData=
 [
-  ['tcpconnect_60',['tcpConnect',['../group___e_s_p-_wireless.html#ga053ffd00b1cf4c8e6a3f5a02323b5084',1,'ESP-Wireless-v1.c']]],
-  ['tcpsend_61',['tcpSend',['../group___e_s_p-_wireless.html#ga9962c89d71d4e7d2c7427874a753ed2b',1,'ESP-Wireless-v1.c']]],
-  ['tim1_5fbrk_5fup_5ftrg_5fcom_5firqhandler_62',['TIM1_BRK_UP_TRG_COM_IRQHandler',['../stm32f0xx__it_8c.html#a0bf60da545bf36717bd2c9ce3d13bf81',1,'stm32f0xx_it.c']]]
+  ['startdefaulttask_62',['StartDefaultTask',['../main_8c.html#a016544463b4842ced7191baf8f449cea',1,'main.c']]],
+  ['startstandby_63',['startStandBy',['../group___power_control.html#gac8d9c4cae0d23dc4eaa77a1dacd16011',1,'standBy.c']]],
+  ['systemclock_5fconfig_64',['SystemClock_Config',['../main_8c.html#a70af21c671abfcc773614a9a4f63d920',1,'main.c']]],
+  ['systemcoreclockupdate_65',['SystemCoreClockUpdate',['../group___s_t_m32_f0xx___system___private___functions.html#gae0c36a9591fe6e9c45ecb21a794f0f0f',1,'system_stm32f0xx.c']]],
+  ['systeminit_66',['SystemInit',['../group___s_t_m32_f0xx___system___private___functions.html#ga93f514700ccf00d08dbdcff7f1224eb2',1,'system_stm32f0xx.c']]]
 ];
