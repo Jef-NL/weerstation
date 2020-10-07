@@ -586,9 +586,9 @@ void ConnectToServer(void const * argument)
 
 	  static _Bool Connection = 0;
 	  if(Connection_Server_status==0 ){
-		  Connection = espConnect("Ziggo8550182", "Johanna1967!");
+		  Connection = espConnect("Quinnvanderschaar", "test1234");
 		  HAL_Delay(5000);
-		  Connection =tcpConnect("192.168.178.80", "80");
+		  Connection =tcpConnect("192.168.178.180", "80");
 		  HAL_Delay(1000);
 		  if(Connection==1){
 			  Connection_Server_status=2;

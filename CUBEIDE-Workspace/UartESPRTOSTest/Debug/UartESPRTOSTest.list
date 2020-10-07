@@ -39,11 +39,11 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING
  17 .debug_line   00013cf3  00000000  00000000  00054516  2**0
                   CONTENTS, READONLY, DEBUGGING
- 18 .debug_str    0005d182  00000000  00000000  00068209  2**0
+ 18 .debug_str    0005d18c  00000000  00000000  00068209  2**0
                   CONTENTS, READONLY, DEBUGGING
- 19 .comment      0000007b  00000000  00000000  000c538b  2**0
+ 19 .comment      0000007b  00000000  00000000  000c5395  2**0
                   CONTENTS, READONLY
- 20 .debug_frame  00005a14  00000000  00000000  000c5408  2**2
+ 20 .debug_frame  00005a14  00000000  00000000  000c5410  2**2
                   CONTENTS, READONLY, DEBUGGING
 
 Disassembly of section .text:
@@ -8012,7 +8012,7 @@ void ConnectToServer(void const * argument)
  8003b92:	781b      	ldrb	r3, [r3, #0]
  8003b94:	2b00      	cmp	r3, #0
  8003b96:	d127      	bne.n	8003be8 <ConnectToServer+0x60>
-		  Connection = espConnect("Ziggo8550182", "Johanna1967!");
+		  Connection = espConnect("Quinnvanderschaar", "test1234");
  8003b98:	4a18      	ldr	r2, [pc, #96]	; (8003bfc <ConnectToServer+0x74>)
  8003b9a:	4b19      	ldr	r3, [pc, #100]	; (8003c00 <ConnectToServer+0x78>)
  8003b9c:	0011      	movs	r1, r2
@@ -8026,7 +8026,7 @@ void ConnectToServer(void const * argument)
  8003bac:	4b16      	ldr	r3, [pc, #88]	; (8003c08 <ConnectToServer+0x80>)
  8003bae:	0018      	movs	r0, r3
  8003bb0:	f000 fafa 	bl	80041a8 <HAL_Delay>
-		  Connection =tcpConnect("192.168.178.80", "80");
+		  Connection =tcpConnect("192.168.178.180", "80");
  8003bb4:	4a15      	ldr	r2, [pc, #84]	; (8003c0c <ConnectToServer+0x84>)
  8003bb6:	4b16      	ldr	r3, [pc, #88]	; (8003c10 <ConnectToServer+0x88>)
  8003bb8:	0011      	movs	r1, r2
@@ -8071,7 +8071,7 @@ void ConnectToServer(void const * argument)
  8003bf6:	46c0      	nop			; (mov r8, r8)
  8003bf8:	20000594 	.word	0x20000594
  8003bfc:	0800b680 	.word	0x0800b680
- 8003c00:	0800b690 	.word	0x0800b690
+ 8003c00:	0800b68c 	.word	0x0800b68c
  8003c04:	200005a2 	.word	0x200005a2
  8003c08:	00001388 	.word	0x00001388
  8003c0c:	0800b6a0 	.word	0x0800b6a0
