@@ -1,4 +1,4 @@
-T_H_A_L_Sensor.c:9:9:Read_Pressure_Sensor	120	static
-T_H_A_L_Sensor.c:47:9:Tem_Sensor	32	static
-T_H_A_L_Sensor.c:52:9:Hum_Sensor	32	static
-T_H_A_L_Sensor.c:57:9:LUX_Sensor	40	static
+T_H_A_L_Sensor.c:26:9:Read_Pressure_Sensor	96	static
+T_H_A_L_Sensor.c:68:9:Tem_Sensor	24	static
+T_H_A_L_Sensor.c:79:9:Hum_Sensor	24	static
+T_H_A_L_Sensor.c:90:9:LUX_Sensor	40	static

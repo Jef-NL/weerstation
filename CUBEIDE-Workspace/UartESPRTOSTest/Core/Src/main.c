@@ -517,10 +517,6 @@ void StartDefaultTask(void const * argument)
 {
   /* USER CODE BEGIN 5 */
   /* Infinite loop */
-
-
-
-
     	 resetStandBy();
 
     	if(Sensor_Read_status==2 && Connection_Server_status ==2){
@@ -557,12 +553,10 @@ void ReadSensors(void const * argument)
 {
   /* USER CODE BEGIN ReadSensors */
   /* Infinite loop */
-  static char Data[10];
-
 	 if( Sensor_Read_status==0){
-	  sensorData[missed_cycles].T= Tem_Sensor(Data);
-	  sensorData[missed_cycles].H= Hum_Sensor(Data);
-	  sensorData[missed_cycles].A= Read_Pressure_Sensor(Data);
+	  sensorData[missed_cycles].T= Tem_Sensor();
+	  sensorData[missed_cycles].H= Hum_Sensor();
+	  sensorData[missed_cycles].A= Read_Pressure_Sensor();
 	  sensorData[missed_cycles].L= LUX_Sensor();
 	  Sensor_Read_status=2;
 	 }
@@ -586,9 +580,9 @@ void ConnectToServer(void const * argument)
 
 	  static _Bool Connection = 0;
 	  if(Connection_Server_status==0 ){
-		  Connection = espConnect("Ziggo8550182", "Johanna1967!");
+		  Connection = espConnect("Quinnvanderschaar", "test1234");
 		  HAL_Delay(5000);
-		  Connection =tcpConnect("192.168.178.80", "80");
+		  Connection =tcpConnect("192.168.178.180", "80");
 		  HAL_Delay(1000);
 		  if(Connection==1){
 			  Connection_Server_status=2;

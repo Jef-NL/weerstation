@@ -50,8 +50,8 @@ UartESPRTOSTest.bin \
 all: UartESPRTOSTest.elf secondary-outputs
 
 # Tool invocations
-UartESPRTOSTest.elf: $(OBJS) $(USER_OBJS) C:\Users\quinn\Documents\workspace_weerstation\UartESPRTOSTest\STM32F030R8TX_FLASH.ld
-	arm-none-eabi-gcc -o "UartESPRTOSTest.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m0 -T"C:\Users\quinn\Documents\workspace_weerstation\UartESPRTOSTest\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="UartESPRTOSTest.map" -Wl,--gc-sections -static -u _printf_float --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+UartESPRTOSTest.elf: $(OBJS) $(USER_OBJS) C:\Users\quinn\Desktop\Weerstation\CUBEIDE-Workspace\UartESPRTOSTest\STM32F030R8TX_FLASH.ld
+	arm-none-eabi-gcc -o "UartESPRTOSTest.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m0 -T"C:\Users\quinn\Desktop\Weerstation\CUBEIDE-Workspace\UartESPRTOSTest\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="UartESPRTOSTest.map" -Wl,--gc-sections -static -u _printf_float --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

@@ -16,9 +16,9 @@
 #include <string.h>
 #include <stdlib.h>
 
-int16_t  Read_Sensor_16_signed( uint8_t sensoradres, char *naam, uint16_t sensAddress );
-uint16_t Read_Sensor_16_unsigned( uint8_t sensoradres, char *naam, uint16_t sensAddress );
-int  Read_Sensor_20( uint8_t sensoradres, char *naam, uint16_t sensAddress );
+int16_t  Read_Sensor_16_signed( uint8_t sensoradres,  uint16_t sensAddress );
+uint16_t Read_Sensor_16_unsigned( uint8_t sensoradres,  uint16_t sensAddress );
+int  Read_Sensor_20( uint8_t sensoradres,  uint16_t sensAddress );
 
 
 

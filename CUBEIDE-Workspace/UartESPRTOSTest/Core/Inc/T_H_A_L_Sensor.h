@@ -13,8 +13,8 @@
 #include "main.h"
 
 
-double Read_Pressure_Sensor( char *naam );
-double Tem_Sensor(char *naam);
-double Hum_Sensor(char *naam);
+double Read_Pressure_Sensor();
+double Tem_Sensor();
+double Hum_Sensor();
 double LUX_Sensor();
 #endif /* INC_T_H_A_L_SENSOR_H_ */

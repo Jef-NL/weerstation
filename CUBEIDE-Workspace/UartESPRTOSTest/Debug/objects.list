@@ -1,5 +1,4 @@
 "Core/Src/ESP-Wireless-v1.o"
-"Core/Src/FlashMemory.o"
 "Core/Src/I2c.o"
 "Core/Src/T_H_A_L_Sensor.o"
 "Core/Src/freertos.o"
