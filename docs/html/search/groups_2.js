@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['powercontrol_76',['PowerControl',['../group___power_control.html',1,'']]]
+  ['i2c_95',['I2c',['../group___i2c.html',1,'']]]
 ];

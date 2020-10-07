@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['powercontrol_18',['PowerControl',['../group___power_control.html',1,'']]]
+  ['main_19',['main',['../main_8c.html#a840291bc02cba5474a4cb46a9b9566fe',1,'main.c']]],
+  ['main_2ec_20',['main.c',['../main_8c.html',1,'']]]
 ];

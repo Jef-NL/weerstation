@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['main_59',['main',['../main_8c.html#a840291bc02cba5474a4cb46a9b9566fe',1,'main.c']]]
+  ['lux_5fsensor_72',['LUX_Sensor',['../group___sensors.html#ga1956e23e0dcbf2ca6be7b8fdd74310ff',1,'T_H_A_L_Sensor.c']]]
 ];

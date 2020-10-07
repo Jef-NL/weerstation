@@ -1,27 +1,30 @@
 var indexSectionsWithContent =
 {
-  0: "_cehmnprstu",
-  1: "ems",
-  2: "_cehmnrstu",
-  3: "hrt",
-  4: "ceps"
+  0: "_cehilmnrstu",
+  1: "s",
+  2: "emst",
+  3: "_cehlmnrstu",
+  4: "hrt",
+  5: "ceis"
 };
 
 var indexSectionNames =
 {
   0: "all",
-  1: "files",
-  2: "functions",
-  3: "variables",
-  4: "groups"
+  1: "classes",
+  2: "files",
+  3: "functions",
+  4: "variables",
+  5: "groups"
 };
 
 var indexSectionLabels =
 {
   0: "All",
-  1: "Files",
-  2: "Functions",
-  3: "Variables",
-  4: "Modules"
+  1: "Data Structures",
+  2: "Files",
+  3: "Functions",
+  4: "Variables",
+  5: "Modules"
 };
 

@@ -1,21 +1,10 @@
 var searchData=
 [
-  ['standby_2ec_21',['standBy.c',['../stand_by_8c.html',1,'']]],
-  ['startdefaulttask_22',['StartDefaultTask',['../main_8c.html#a016544463b4842ced7191baf8f449cea',1,'main.c']]],
-  ['startstandby_23',['startStandBy',['../group___power_control.html#gac8d9c4cae0d23dc4eaa77a1dacd16011',1,'standBy.c']]],
-  ['stm32f0xx_5fit_2ec_24',['stm32f0xx_it.c',['../stm32f0xx__it_8c.html',1,'']]],
-  ['stm32f0xx_5fsystem_25',['Stm32f0xx_system',['../group__stm32f0xx__system.html',1,'']]],
-  ['stm32f0xx_5fsystem_5fprivate_5fdefines_26',['STM32F0xx_System_Private_Defines',['../group___s_t_m32_f0xx___system___private___defines.html',1,'']]],
-  ['stm32f0xx_5fsystem_5fprivate_5ffunctionprototypes_27',['STM32F0xx_System_Private_FunctionPrototypes',['../group___s_t_m32_f0xx___system___private___function_prototypes.html',1,'']]],
-  ['stm32f0xx_5fsystem_5fprivate_5ffunctions_28',['STM32F0xx_System_Private_Functions',['../group___s_t_m32_f0xx___system___private___functions.html',1,'']]],
-  ['stm32f0xx_5fsystem_5fprivate_5fincludes_29',['STM32F0xx_System_Private_Includes',['../group___s_t_m32_f0xx___system___private___includes.html',1,'']]],
-  ['stm32f0xx_5fsystem_5fprivate_5fmacros_30',['STM32F0xx_System_Private_Macros',['../group___s_t_m32_f0xx___system___private___macros.html',1,'']]],
-  ['stm32f0xx_5fsystem_5fprivate_5ftypesdefinitions_31',['STM32F0xx_System_Private_TypesDefinitions',['../group___s_t_m32_f0xx___system___private___types_definitions.html',1,'']]],
-  ['stm32f0xx_5fsystem_5fprivate_5fvariables_32',['STM32F0xx_System_Private_Variables',['../group___s_t_m32_f0xx___system___private___variables.html',1,'']]],
-  ['syscalls_2ec_33',['syscalls.c',['../syscalls_8c.html',1,'']]],
-  ['sysmem_2ec_34',['sysmem.c',['../sysmem_8c.html',1,'']]],
-  ['system_5fstm32f0xx_2ec_35',['system_stm32f0xx.c',['../system__stm32f0xx_8c.html',1,'']]],
-  ['systemclock_5fconfig_36',['SystemClock_Config',['../main_8c.html#a70af21c671abfcc773614a9a4f63d920',1,'main.c']]],
-  ['systemcoreclockupdate_37',['SystemCoreClockUpdate',['../group___s_t_m32_f0xx___system___private___functions.html#gae0c36a9591fe6e9c45ecb21a794f0f0f',1,'system_stm32f0xx.c']]],
-  ['systeminit_38',['SystemInit',['../group___s_t_m32_f0xx___system___private___functions.html#ga93f514700ccf00d08dbdcff7f1224eb2',1,'system_stm32f0xx.c']]]
+  ['read_5fpressure_5fsensor_22',['Read_Pressure_Sensor',['../group___sensors.html#ga01ba4a2e16e6c8ec3d1625a9d02c21d7',1,'T_H_A_L_Sensor.c']]],
+  ['read_5fsensor_5f16_5fsigned_23',['Read_Sensor_16_signed',['../group___i2c.html#gaf9e5970bf2306430c68b5c6498e71a97',1,'I2c.c']]],
+  ['read_5fsensor_5f16_5funsigned_24',['Read_Sensor_16_unsigned',['../group___i2c.html#gac443b299310dfc86c4a12345c191acf4',1,'I2c.c']]],
+  ['read_5fsensor_5f20_25',['Read_Sensor_20',['../group___i2c.html#gad241c6fb723469c78aa798bcc4e194d1',1,'I2c.c']]],
+  ['readsensors_26',['ReadSensors',['../main_8c.html#af61cc3bf43e2ca25f189f04a7df8176a',1,'main.c']]],
+  ['receivebuffer_27',['receiveBuffer',['../group___e_s_p-_wireless.html#gafb0f981fcad6a37d4292527ccf68b6af',1,'ESP-Wireless-v1.c']]],
+  ['rtc_5firqhandler_28',['RTC_IRQHandler',['../stm32f0xx__it_8c.html#ab86b9dd0d7b4eacfe38086e1fa4c2312',1,'stm32f0xx_it.c']]]
 ];

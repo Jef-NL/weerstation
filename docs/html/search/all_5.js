@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['nmi_5fhandler_17',['NMI_Handler',['../stm32f0xx__it_8c.html#a6ad7a5e3ee69cb6db6a6b9111ba898bc',1,'stm32f0xx_it.c']]]
+  ['lux_5fsensor_18',['LUX_Sensor',['../group___sensors.html#ga1956e23e0dcbf2ca6be7b8fdd74310ff',1,'T_H_A_L_Sensor.c']]]
 ];

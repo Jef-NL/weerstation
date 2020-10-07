@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['resetstandby_61',['resetStandBy',['../group___power_control.html#ga3ceb46ca3fad7b668ae4682929cb9d35',1,'standBy.c']]]
+  ['nmi_5fhandler_74',['NMI_Handler',['../stm32f0xx__it_8c.html#a6ad7a5e3ee69cb6db6a6b9111ba898bc',1,'stm32f0xx_it.c']]]
 ];
