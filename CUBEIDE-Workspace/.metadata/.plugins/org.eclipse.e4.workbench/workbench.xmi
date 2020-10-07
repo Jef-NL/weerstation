@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="ASCII"?>
 <application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_jmgdUfzLEeq9woekUZ6pRw" elementId="org.eclipse.e4.legacy.ide.application" contributorURI="platform:/plugin/org.eclipse.ui.workbench" selectedElement="_jmhEYPzLEeq9woekUZ6pRw" bindingContexts="_jmhEafzLEeq9woekUZ6pRw">
-  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;system_stm32f0xx.c&quot; tooltip=&quot;Weerstation-Main/Core/Src/system_stm32f0xx.c&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Weerstation-Main/Core/Src/system_stm32f0xx.c&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;sysmem.c&quot; tooltip=&quot;Weerstation-Main/Core/Src/sysmem.c&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Weerstation-Main/Core/Src/sysmem.c&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;ESP-Wireless-v1.c&quot; tooltip=&quot;Weerstation-Main/Core/Src/ESP-Wireless-v1.c&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Weerstation-Main/Core/Src/ESP-Wireless-v1.c&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;main.h&quot; tooltip=&quot;Weerstation-Main/Core/Inc/main.h&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Weerstation-Main/Core/Inc/main.h&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;main.c&quot; tooltip=&quot;Weerstation-Main/Core/Src/main.c&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Weerstation-Main/Core/Src/main.c&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;ESP-Wireless-v1.h&quot; tooltip=&quot;Weerstation-Main/Core/Inc/ESP-Wireless-v1.h&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Weerstation-Main/Core/Inc/ESP-Wireless-v1.h&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.st.stm32cube.common.mx.startCubeMx&quot; name=&quot;Weerstation-Main.ioc&quot; tooltip=&quot;Weerstation-Main/Weerstation-Main.ioc&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Weerstation-Main/Weerstation-Main.ioc&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
+  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;main.c&quot; tooltip=&quot;UartESPRTOSTest/Core/Src/main.c&quot;>&#xD;&#xA;&lt;persistable path=&quot;/UartESPRTOSTest/Core/Src/main.c&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;main.c&quot; tooltip=&quot;Weerstation-Main/Core/Src/main.c&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Weerstation-Main/Core/Src/main.c&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;stm32f0xx_hal_msp.c&quot; tooltip=&quot;Weerstation-Main/Core/Src/stm32f0xx_hal_msp.c&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Weerstation-Main/Core/Src/stm32f0xx_hal_msp.c&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;standBy.c&quot; tooltip=&quot;Weerstation-Main/Core/Src/standBy.c&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Weerstation-Main/Core/Src/standBy.c&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;system_stm32f0xx.c&quot; tooltip=&quot;Weerstation-Main/Core/Src/system_stm32f0xx.c&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Weerstation-Main/Core/Src/system_stm32f0xx.c&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;sysmem.c&quot; tooltip=&quot;Weerstation-Main/Core/Src/sysmem.c&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Weerstation-Main/Core/Src/sysmem.c&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;ESP-Wireless-v1.c&quot; tooltip=&quot;Weerstation-Main/Core/Src/ESP-Wireless-v1.c&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Weerstation-Main/Core/Src/ESP-Wireless-v1.c&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;main.h&quot; tooltip=&quot;Weerstation-Main/Core/Inc/main.h&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Weerstation-Main/Core/Inc/main.h&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;ESP-Wireless-v1.h&quot; tooltip=&quot;Weerstation-Main/Core/Inc/ESP-Wireless-v1.h&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Weerstation-Main/Core/Inc/ESP-Wireless-v1.h&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.st.stm32cube.common.mx.startCubeMx&quot; name=&quot;Weerstation-Main.ioc&quot; tooltip=&quot;Weerstation-Main/Weerstation-Main.ioc&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Weerstation-Main/Weerstation-Main.ioc&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
   <tags>activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
   <tags>ModelMigrationProcessor.001</tags>
-  <children xsi:type="basic:TrimmedWindow" xmi:id="_jmhEYPzLEeq9woekUZ6pRw" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.ui.workbench" selectedElement="_jyGCQvzLEeq9woekUZ6pRw" x="1398" y="-22" width="1024" height="768">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_jmhEYPzLEeq9woekUZ6pRw" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.ui.workbench" selectedElement="_jyGCQvzLEeq9woekUZ6pRw" x="0" y="0" width="1024" height="768">
     <persistedState key="coolBarVisible" value="true"/>
     <persistedState key="perspectiveBarVisible" value="true"/>
     <persistedState key="isRestored" value="true"/>
@@ -70,8 +70,9 @@
           <tags>persp.viewSC:com.st.stm32cube.ide.mcu.buildanalyzer.view</tags>
           <tags>persp.viewSC:com.st.stm32cube.ide.mcu.stackanalyzer.stackanalyzer.view</tags>
           <tags>persp.viewSC:com.st.stm32cube.ide.mcu.sfrview</tags>
-          <children xsi:type="basic:PartSashContainer" xmi:id="_kAQaEvzLEeq9woekUZ6pRw" selectedElement="_kAQaGPzLEeq9woekUZ6pRw" horizontal="true">
+          <children xsi:type="basic:PartSashContainer" xmi:id="_kAQaEvzLEeq9woekUZ6pRw" selectedElement="_kAQaE_zLEeq9woekUZ6pRw" horizontal="true">
             <children xsi:type="basic:PartStack" xmi:id="_kAQaE_zLEeq9woekUZ6pRw" elementId="topLeft" containerData="2500" selectedElement="_kAQaFPzLEeq9woekUZ6pRw">
+              <tags>active</tags>
               <children xsi:type="advanced:Placeholder" xmi:id="_kAQaFPzLEeq9woekUZ6pRw" elementId="org.eclipse.ui.navigator.ProjectExplorer" ref="_j_2xcPzLEeq9woekUZ6pRw" closeable="true">
                 <tags>View</tags>
                 <tags>categoryTag:General</tags>
@@ -90,7 +91,7 @@
               </children>
             </children>
             <children xsi:type="basic:PartSashContainer" xmi:id="_kAQaGPzLEeq9woekUZ6pRw" containerData="7500" selectedElement="_kAQaGfzLEeq9woekUZ6pRw">
-              <children xsi:type="basic:PartSashContainer" xmi:id="_kAQaGfzLEeq9woekUZ6pRw" containerData="7500" selectedElement="_kAQaGvzLEeq9woekUZ6pRw" horizontal="true">
+              <children xsi:type="basic:PartSashContainer" xmi:id="_kAQaGfzLEeq9woekUZ6pRw" containerData="6858" selectedElement="_kAQaGvzLEeq9woekUZ6pRw" horizontal="true">
                 <children xsi:type="advanced:Placeholder" xmi:id="_kAQaGvzLEeq9woekUZ6pRw" elementId="org.eclipse.ui.editorss" containerData="7500" ref="_j_x48PzLEeq9woekUZ6pRw"/>
                 <children xsi:type="basic:PartStack" xmi:id="_kAQaG_zLEeq9woekUZ6pRw" elementId="topRight" containerData="2500" selectedElement="_kAQaHPzLEeq9woekUZ6pRw">
                   <children xsi:type="advanced:Placeholder" xmi:id="_kAQaHPzLEeq9woekUZ6pRw" elementId="org.eclipse.ui.views.ContentOutline" ref="_j_5NsvzLEeq9woekUZ6pRw" closeable="true">
@@ -107,7 +108,7 @@
                   </children>
                 </children>
               </children>
-              <children xsi:type="basic:PartSashContainer" xmi:id="_kAQaH_zLEeq9woekUZ6pRw" containerData="2500" selectedElement="_kAQaJfzLEeq9woekUZ6pRw" horizontal="true">
+              <children xsi:type="basic:PartSashContainer" xmi:id="_kAQaH_zLEeq9woekUZ6pRw" containerData="3142" selectedElement="_kAQaJfzLEeq9woekUZ6pRw" horizontal="true">
                 <children xsi:type="basic:PartStack" xmi:id="_kAQaIPzLEeq9woekUZ6pRw" elementId="bottom" containerData="5000" selectedElement="_kAQaI_zLEeq9woekUZ6pRw">
                   <children xsi:type="advanced:Placeholder" xmi:id="_kAQaIfzLEeq9woekUZ6pRw" elementId="org.eclipse.ui.views.ProblemView" ref="_j_4movzLEeq9woekUZ6pRw" closeable="true">
                     <tags>View</tags>
@@ -280,47 +281,14 @@
       <tags>categoryTag:Help</tags>
     </sharedElements>
     <sharedElements xsi:type="advanced:Area" xmi:id="_j_x48PzLEeq9woekUZ6pRw" elementId="org.eclipse.ui.editorss" selectedElement="_j_x48fzLEeq9woekUZ6pRw">
-      <children xsi:type="basic:PartStack" xmi:id="_j_x48fzLEeq9woekUZ6pRw" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_6wHeEAMqEeukHIxZPNn2Eg">
+      <children xsi:type="basic:PartStack" xmi:id="_j_x48fzLEeq9woekUZ6pRw" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_Fn7xYAirEeuc5uios7M2_w">
         <tags>org.eclipse.e4.primaryDataStack</tags>
         <tags>EditorStack</tags>
-        <tags>active</tags>
-        <children xsi:type="basic:Part" xmi:id="_hfzxEAMiEeukHIxZPNn2Eg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="main.c" iconURI="platform:/plugin/org.eclipse.cdt.ui/icons/obj16/c_file_obj.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;main.c&quot; partName=&quot;main.c&quot; title=&quot;main.c&quot; tooltip=&quot;Weerstation-Main/Core/Src/main.c&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Weerstation-Main/Core/Src/main.c&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;1663&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
+        <children xsi:type="basic:Part" xmi:id="_Fn7xYAirEeuc5uios7M2_w" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="main.c" iconURI="platform:/plugin/org.eclipse.cdt.ui/icons/obj16/c_file_obj.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;main.c&quot; partName=&quot;main.c&quot; title=&quot;main.c&quot; tooltip=&quot;UartESPRTOSTest/Core/Src/main.c&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/UartESPRTOSTest/Core/Src/main.c&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;16665&quot; selectionTopPixel=&quot;8475&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>removeOnHide</tags>
           <tags>org.eclipse.cdt.ui.editor.CEditor</tags>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_sweNAAMiEeukHIxZPNn2Eg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="ESP-Wireless-v1.h" iconURI="platform:/plugin/org.eclipse.cdt.ui/icons/obj16/c_file_obj.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;ESP-Wireless-v1.h&quot; partName=&quot;ESP-Wireless-v1.h&quot; title=&quot;ESP-Wireless-v1.h&quot; tooltip=&quot;Weerstation-Main/Core/Inc/ESP-Wireless-v1.h&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Weerstation-Main/Core/Inc/ESP-Wireless-v1.h&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;0&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>removeOnHide</tags>
-          <tags>org.eclipse.cdt.ui.editor.CEditor</tags>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_usHaUAMiEeukHIxZPNn2Eg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="main.h" iconURI="platform:/plugin/org.eclipse.cdt.ui/icons/obj16/c_file_obj.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;main.h&quot; partName=&quot;main.h&quot; title=&quot;main.h&quot; tooltip=&quot;Weerstation-Main/Core/Inc/main.h&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Weerstation-Main/Core/Inc/main.h&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;1396&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>removeOnHide</tags>
-          <tags>org.eclipse.cdt.ui.editor.CEditor</tags>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_6CW50AMiEeukHIxZPNn2Eg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="ESP-Wireless-v1.c" iconURI="platform:/plugin/org.eclipse.cdt.ui/icons/obj16/c_file_obj.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;ESP-Wireless-v1.c&quot; partName=&quot;ESP-Wireless-v1.c&quot; title=&quot;ESP-Wireless-v1.c&quot; tooltip=&quot;Weerstation-Main/Core/Src/ESP-Wireless-v1.c&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Weerstation-Main/Core/Src/ESP-Wireless-v1.c&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;1090&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>removeOnHide</tags>
-          <tags>org.eclipse.cdt.ui.editor.CEditor</tags>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_54y0gAMqEeukHIxZPNn2Eg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="sysmem.c" iconURI="platform:/plugin/org.eclipse.cdt.ui/icons/obj16/c_file_obj.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;sysmem.c&quot; partName=&quot;sysmem.c&quot; title=&quot;sysmem.c&quot; tooltip=&quot;Weerstation-Main/Core/Src/sysmem.c&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Weerstation-Main/Core/Src/sysmem.c&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;0&quot; selectionTopPixel=&quot;22&quot;/>&#xD;&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>removeOnHide</tags>
-          <tags>org.eclipse.cdt.ui.editor.CEditor</tags>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_6wHeEAMqEeukHIxZPNn2Eg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="system_stm32f0xx.c" iconURI="platform:/plugin/org.eclipse.cdt.ui/icons/obj16/c_file_obj.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;system_stm32f0xx.c&quot; partName=&quot;system_stm32f0xx.c&quot; title=&quot;system_stm32f0xx.c&quot; tooltip=&quot;Weerstation-Main/Core/Src/system_stm32f0xx.c&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Weerstation-Main/Core/Src/system_stm32f0xx.c&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;0&quot; selectionTopPixel=&quot;1440&quot;/>&#xD;&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>removeOnHide</tags>
-          <tags>org.eclipse.cdt.ui.editor.CEditor</tags>
-          <tags>active</tags>
-          <tags>activeOnClose</tags>
         </children>
       </children>
     </sharedElements>
@@ -330,6 +298,8 @@
       <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view CommonNavigator.LINKING_ENABLED=&quot;0&quot; org.eclipse.cdt.ui.cview.groupincludes=&quot;false&quot; org.eclipse.cdt.ui.cview.groupmacros=&quot;false&quot; org.eclipse.cdt.ui.editor.CUChildren=&quot;true&quot; org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets=&quot;0&quot;>&#xD;&#xA;&lt;lastRecentlyUsedFilters/>&#xD;&#xA;&lt;/view>"/>
       <tags>View</tags>
       <tags>categoryTag:General</tags>
+      <tags>active</tags>
+      <tags>activeOnClose</tags>
       <menus xmi:id="_kBbewPzLEeq9woekUZ6pRw" elementId="org.eclipse.ui.navigator.ProjectExplorer">
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
@@ -503,7 +473,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_j2wf0PzLEeq9woekUZ6pRw" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_JoZawANIEeuVgZEdlzFMAA" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_jm-Xh_zLEeq9woekUZ6pRw"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_L7O7cAirEeudGozcXAwQUg" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_jm-Xh_zLEeq9woekUZ6pRw"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_j2xG4PzLEeq9woekUZ6pRw" elementId="group.edit" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -537,7 +507,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_j2xG5_zLEeq9woekUZ6pRw" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_Job3AANIEeuVgZEdlzFMAA" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_jm9wY_zLEeq9woekUZ6pRw"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_L7RXsAirEeudGozcXAwQUg" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_jm9wY_zLEeq9woekUZ6pRw"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_j2xG6PzLEeq9woekUZ6pRw" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -2191,7 +2161,7 @@
   <addons xmi:id="_jmhEdfzLEeq9woekUZ6pRw" elementId="MinMax Addon" contributorURI="platform:/plugin/org.eclipse.ui.workbench" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.MinMaxAddon"/>
   <addons xmi:id="_jmhEdvzLEeq9woekUZ6pRw" elementId="org.eclipse.ui.workbench.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.workbench" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
   <addons xmi:id="_jml84PzLEeq9woekUZ6pRw" elementId="SplitterAddon" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.splitteraddon.SplitterAddon"/>
-  <addons xmi:id="_IYS0IKimEeS11vbz3f9ezw" elementId="org.eclipse.ui.ide.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
+  <addons xmi:id="_Lttc0AirEeudGozcXAwQUg" elementId="org.eclipse.ui.ide.addon.0" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
   <addons xmi:id="_dz0JgGOlEeSMMaPQU2nlzw" elementId="org.eclipse.ui.ide.application.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.ui.ide.application/org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon"/>
   <categories xmi:id="_jm5e4PzLEeq9woekUZ6pRw" elementId="org.eclipse.team.ui.category.team" name="Team" description="Actions that apply when working with a Team"/>
   <categories xmi:id="_jm5e4fzLEeq9woekUZ6pRw" elementId="org.eclipse.ui.category.views" name="Views" description="Commands for opening views"/>
