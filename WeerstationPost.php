@@ -29,7 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         } 
         
 		// 6. Build Query
-        $sql = "INSERT INTO weerstation (temp, humid, pressure, lightlux, TIME)
+        $sql = "INSERT INTO tblweatherstation (floTemp, floHumid, floPressure, floLightlux, TIME)
         VALUES ('" . $temp . "', '" . $humid . "', '" . $pressure . "', '" . $lux. "', date_sub( Now(), INTERVAL ('". $date."') MINUTE))";
         
 		// 7. Send Query
