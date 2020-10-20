@@ -19,7 +19,6 @@
 int16_t  Read_Sensor_16_signed( uint8_t sensoradres,  uint16_t sensAddress );
 uint16_t Read_Sensor_16_unsigned( uint8_t sensoradres,  uint16_t sensAddress );
 int  Read_Sensor_20( uint8_t sensoradres,  uint16_t sensAddress );
-
-
-
+void writeFlash(int *cycles_counter, SensorData* input);
+void readFlash(int *cycles_counter, SensorData* input);
 #endif /* INC_I2C_H_ */

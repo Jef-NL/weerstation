@@ -76,6 +76,7 @@ UART_HandleTypeDef huart1;
 UART_HandleTypeDef huart2;
 I2C_HandleTypeDef hi2c1;
 ADC_HandleTypeDef hadc;
+typedef struct { double T,H,A,L; int minutes_expired;} SensorData;
 
 /* USER CODE END Private defines */
 

@@ -7,7 +7,7 @@ main.c:407:13:MX_USART1_UART_Init	8	static
 main.c:442:13:MX_USART2_UART_Init	8	static
 main.c:477:13:MX_GPIO_Init	56	static
 main.c:516:6:StartDefaultTask	48	static
-main.c:552:6:ReadSensors	24	static
-main.c:575:6:ConnectToServer	16	static
-main.c:606:6:HAL_TIM_PeriodElapsedCallback	16	static
-main.c:623:6:Error_Handler	8	static
+main.c:557:6:ReadSensors	24	static
+main.c:581:6:ConnectToServer	16	static
+main.c:612:6:HAL_TIM_PeriodElapsedCallback	16	static
+main.c:629:6:Error_Handler	8	static

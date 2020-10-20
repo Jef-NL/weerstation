@@ -73,7 +73,7 @@ void ReadSensors(void const * argument);
 void ConnectToServer(void const * argument);
 
 /* USER CODE BEGIN PFP */
-typedef struct { double T,H,A,L; int minutes_expired;} SensorData;
+//typedef struct { double T,H,A,L; int minutes_expired;} SensorData;
 int missed_cycles=0;
 SensorData sensorData[20];
 uint8_t Connection_Server_status=0;
@@ -528,13 +528,18 @@ void StartDefaultTask(void const * argument)
     		 	     missed_cycles=0;
     		 	    Sensor_Read_status=0;
     		 	    Connection_Server_status =0;
+    		 	   writeFlash(&missed_cycles,&sensorData );
     		 	   startStandBy();
 
     		 	}else if(Sensor_Read_status==2 && Connection_Server_status ==1){
     		 		missed_cycles++;
-    		 		 startSleep();
+    		 		writeFlash(&missed_cycles, &sensorData);
+    		 		startStandBy();
 	  		    }else{
 	  		    	//sleep mode
+	  		    	missed_cycles++;
+	  		    	writeFlash(&missed_cycles, &sensorData);
+	  		    	startStandBy();
 	  		    }
     	//startStandBy();
     	vTaskDelete( NULL );
@@ -553,6 +558,7 @@ void ReadSensors(void const * argument)
 {
   /* USER CODE BEGIN ReadSensors */
   /* Infinite loop */
+	readFlash(&missed_cycles, &sensorData);
 	 if( Sensor_Read_status==0){
 	  sensorData[missed_cycles].T= Tem_Sensor();
 	  sensorData[missed_cycles].H= Hum_Sensor();
@@ -582,7 +588,7 @@ void ConnectToServer(void const * argument)
 	  if(Connection_Server_status==0 ){
 		  Connection = espConnect("Quinnvanderschaar", "test1234");
 		  HAL_Delay(5000);
-		  Connection =tcpConnect("192.168.178.180", "80");
+		  Connection =tcpConnect("192.168.178.80", "80");
 		  HAL_Delay(1000);
 		  if(Connection==1){
 			  Connection_Server_status=2;
