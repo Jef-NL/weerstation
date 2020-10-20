@@ -1,5 +1,5 @@
 I2c.c:28:10:Read_Sensor_16_unsigned	48	static
-I2c.c:57:9:Read_Sensor_16_signed	48	static
-I2c.c:85:5:Read_Sensor_20	48	static
-I2c.c:112:6:readFlash	72	static
-I2c.c:177:6:writeFlash	80	static
+I2c.c:60:9:Read_Sensor_16_signed	48	static
+I2c.c:92:5:Read_Sensor_20	48	static
+I2c.c:123:6:readFlash	80	static
+I2c.c:156:6:writeFlash	88	static
