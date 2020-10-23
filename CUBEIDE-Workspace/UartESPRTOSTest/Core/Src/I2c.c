@@ -38,10 +38,10 @@ uint16_t Read_Sensor_16_unsigned(uint8_t sensoradres, uint16_t sensAddress) {
 		I2C_MEMADD_SIZE_8BIT, 1000);
 		HAL_Delay(200);
 		HAL_I2C_Master_Receive(&hi2c1, sensAddress, (uint8_t*) &Data[0],
-				I2C_MEMADD_SIZE_8BIT, 1000);
+		I2C_MEMADD_SIZE_8BIT, 1000);
 		HAL_Delay(200);
 		HAL_I2C_Master_Receive(&hi2c1, sensAddress |= 0x01, (uint8_t*) &Data[1],
-				I2C_MEMADD_SIZE_8BIT, 1000);
+		I2C_MEMADD_SIZE_8BIT, 1000);
 		Data2 = (Data[1] << 8) + Data[0];
 		return Data2;
 	}
@@ -67,13 +67,13 @@ int16_t Read_Sensor_16_signed(uint8_t sensoradres, uint16_t sensAddress) {
 		uint8_t Data[10];
 		Data[0] = sensoradres;
 		HAL_I2C_Master_Transmit(&hi2c1, sensAddress, (uint8_t*) &Data[0],
-				I2C_MEMADD_SIZE_8BIT, 1000);
+		I2C_MEMADD_SIZE_8BIT, 1000);
 		HAL_Delay(200);
 		HAL_I2C_Master_Receive(&hi2c1, sensAddress, (uint8_t*) &Data[0],
-				I2C_MEMADD_SIZE_8BIT, 1000);
+		I2C_MEMADD_SIZE_8BIT, 1000);
 		HAL_Delay(200);
 		HAL_I2C_Master_Receive(&hi2c1, sensAddress |= 0x01, (uint8_t*) &Data[1],
-				I2C_MEMADD_SIZE_8BIT, 1000);
+		I2C_MEMADD_SIZE_8BIT, 1000);
 		Data2 = (Data[1] << 8) + (Data[0]);
 		return Data2;
 	}
@@ -103,16 +103,16 @@ int Read_Sensor_20(uint8_t sensoradres, uint16_t sensAddress) {
 		I2C_MEMADD_SIZE_8BIT, 1000);
 		HAL_Delay(200);
 		HAL_I2C_Master_Receive(&hi2c1, sensAddress, (uint8_t*) &Data[0],
-				I2C_MEMADD_SIZE_8BIT, 1000);
+		I2C_MEMADD_SIZE_8BIT, 1000);
 		HAL_Delay(200);
 		HAL_I2C_Master_Receive(&hi2c1, sensAddress |= 0x01, (uint8_t*) &Data[1],
-				I2C_MEMADD_SIZE_8BIT, 1000);
+		I2C_MEMADD_SIZE_8BIT, 1000);
 		HAL_Delay(100);
 		HAL_I2C_Master_Transmit(&hi2c1, sensAddress, (uint8_t*) &Data[5],
 		I2C_MEMADD_SIZE_8BIT, 1000);
 		HAL_Delay(100);
 		HAL_I2C_Master_Receive(&hi2c1, sensAddress, (uint8_t*) &Data[3],
-				I2C_MEMADD_SIZE_8BIT, 1000);
+		I2C_MEMADD_SIZE_8BIT, 1000);
 		Data2 = (((Data[0] << 8) + Data[1]) << 4) + (Data[3] >> 3);
 
 		return Data2;
@@ -120,9 +120,8 @@ int Read_Sensor_20(uint8_t sensoradres, uint16_t sensAddress) {
 	return 0;
 }
 
-void readFlash(int *cycles_counter, SensorData *input) {
+void readFlash_cycles(int *cycles_counter, SensorData *input) {
 	uint8_t Data[10];
-	//Data[0] = 0xA0;
 	Data[0] = 0x00;
 	Data[1] = 0x00;
 	HAL_I2C_Master_Transmit(&hi2c1, 0xA1, (uint8_t*) &Data, 2, 1000);
@@ -134,31 +133,29 @@ void readFlash(int *cycles_counter, SensorData *input) {
 	*cycles_counter = Data[0];
 	itoa(Data[0], Data3, 10);
 	HAL_UART_Transmit(&huart2, (uint8_t*) Data3, strlen(Data3), 100);
+
+}
+
+void readFlash_Measure_DATA(int *cycles_counter, SensorData *input) {
+	int i=*cycles_counter;
 	float g[4];
-	for (int i = 0; i < *cycles_counter; i++) {
+	uint8_t Data[10];
+	HAL_Delay(10);
+	for (int j = 0; j < 4; j++) {
+		uint16_t address = 0x05 + 0x05 * j + i * 0x20;
+		Data[0] = (address >> 8);
+		Data[1] = address;
+		HAL_I2C_Master_Transmit(&hi2c1, 0xA1, (uint8_t*) &Data, 2, 1000);
 		HAL_Delay(10);
-		for (int j = 0; j < 4; j++) {
-			//Data[0] = 0xA0;
-
-			uint16_t address= 0x05 + 0x05 * j + i * 0x16;
-			Data[0]= (address >>8);
-			Data[1] = address;
-
-
-			//Data[0] = 0x01 + 0x04 * j + i * 0x16;
-			//Data[1] = 0x01;
-			HAL_I2C_Master_Transmit(&hi2c1, 0xA1, (uint8_t*) &Data, 2, 1000);
-			HAL_Delay(10);
-			HAL_I2C_Master_Receive(&hi2c1, 0xA0, (uint8_t*) &Data, 4, 1000);
-			HAL_Delay(10);
-			memcpy(&g[j], Data, sizeof g[j]);
-		}
-		input[i].T = g[0];
-		input[i].H = g[1];
-		input[i].A = g[2];
-		input[i].L = g[3];
-
+		HAL_I2C_Master_Receive(&hi2c1, 0xA0, (uint8_t*) &Data, 4, 1000);
+		HAL_Delay(10);
+		memcpy(&g[j], Data, sizeof g[j]);
 	}
+	input[i].T = g[0];
+	input[i].H = g[1];
+	input[i].A = g[2];
+	input[i].L = g[3];
+
 }
 void writeFlash(int *cycles_counter, SensorData *input) {
 	char Data3[10];
@@ -169,7 +166,6 @@ void writeFlash(int *cycles_counter, SensorData *input) {
 	} else {
 
 		uint8_t Data[10];
-		//Data[0] = 0xA0;
 		Data[0] = 0x00;
 		Data[1] = 0x00;
 		Data[2] = *cycles_counter & 0xFF;
@@ -178,28 +174,21 @@ void writeFlash(int *cycles_counter, SensorData *input) {
 		HAL_UART_Transmit(&huart2, (uint8_t*) Data3, strlen(Data3), 100);
 
 		int8_t Data2[sizeof(float)];
+		int i = *cycles_counter - 1;
 
-		for (int i = 0; i < *cycles_counter; i++) {
-			float in[4] = { input[i].T, input[i].H, input[i].A, input[i].L };
-			for (int j = 0; j < 5; j++) {
-				memcpy(Data2, &in[j], sizeof in[j]);
-				//Data[0] = 0xA0;
-				//Data[0] = 0x01 + 0x04 * j + i * 0x16;
-				//Data[1] = 0x01;
-				//Data[0]= 0x00;
-				//Data[1] = 0x01 + 0x04 * j + i * 0x16;
-				uint16_t address= 0x05 + 0x05 * j + i * 0x16;
-				Data[0]= (address >>8);
-				Data[1] = address;
+		float in[4] = { input[10].T, input[10].H, input[10].A, input[10].L };
+		for (int j = 0; j < 5; j++) {
+			memcpy(Data2, &in[j], sizeof in[j]);
+			uint16_t address = 0x05 + 0x05 * j + i * 0x20;
+			Data[0] = (address >> 8);
+			Data[1] = address;
 
-				Data[2] = Data2[0];
-				Data[3] = Data2[1];
-				Data[4] = Data2[2];
-				Data[5] = Data2[3];
-				HAL_Delay(10);
-				HAL_I2C_Master_Transmit(&hi2c1, 0xA1, (uint8_t*) &Data, 6,
-						1000);
-			}
+			Data[2] = Data2[0];
+			Data[3] = Data2[1];
+			Data[4] = Data2[2];
+			Data[5] = Data2[3];
+			HAL_Delay(10);
+			HAL_I2C_Master_Transmit(&hi2c1, 0xA1, (uint8_t*) &Data, 6, 1000);
 		}
 	}
 }
