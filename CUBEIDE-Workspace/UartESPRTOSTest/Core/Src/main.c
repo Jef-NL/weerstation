@@ -497,9 +497,7 @@ void StartDefaultTask(void const *argument) {
 	resetStandBy();
 
 	if (Sensor_Read_status == 2 && Connection_Server_status == 2) {
-		//send current data
-		tcpSend(sensorData[10].T, sensorData[10].H, sensorData[10].A,
-				sensorData[10].L, 0);
+
 		int i = 0;
 		while (i < missed_cycles) {
 			for (int j = 0; j < 10; j++) {
@@ -509,12 +507,16 @@ void StartDefaultTask(void const *argument) {
 						sensorData[j].L, sensorData[j].minutes_expired);
 				i++;
 
-				if(i== missed_cycles-1 ){
-					break;
+				if(i== missed_cycles ){
+					j=10;
 				}
+
 			}
 
 		}
+		//send current data
+		tcpSend(sensorData[10].T, sensorData[10].H, sensorData[10].A,
+				sensorData[10].L, 0);
 		missed_cycles = 0;
 		Sensor_Read_status = 0;
 		Connection_Server_status = 0;
