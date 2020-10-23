@@ -139,8 +139,14 @@ void readFlash(int *cycles_counter, SensorData *input) {
 		HAL_Delay(10);
 		for (int j = 0; j < 4; j++) {
 			//Data[0] = 0xA0;
-			Data[0] = 0x01 + 0x04 * j + i * 0x16;
-			Data[1] = 0x01;
+
+			uint16_t address= 0x05 + 0x05 * j + i * 0x16;
+			Data[0]= (address >>8);
+			Data[1] = address;
+
+
+			//Data[0] = 0x01 + 0x04 * j + i * 0x16;
+			//Data[1] = 0x01;
 			HAL_I2C_Master_Transmit(&hi2c1, 0xA1, (uint8_t*) &Data, 2, 1000);
 			HAL_Delay(10);
 			HAL_I2C_Master_Receive(&hi2c1, 0xA0, (uint8_t*) &Data, 4, 1000);
@@ -168,7 +174,7 @@ void writeFlash(int *cycles_counter, SensorData *input) {
 		Data[1] = 0x00;
 		Data[2] = *cycles_counter & 0xFF;
 		HAL_I2C_Master_Transmit(&hi2c1, 0xA1, (uint8_t*) &Data, 3, 1000);
-		itoa(Data[3], Data3, 10);
+		itoa(Data[2], Data3, 10);
 		HAL_UART_Transmit(&huart2, (uint8_t*) Data3, strlen(Data3), 100);
 
 		int8_t Data2[sizeof(float)];
@@ -178,8 +184,14 @@ void writeFlash(int *cycles_counter, SensorData *input) {
 			for (int j = 0; j < 5; j++) {
 				memcpy(Data2, &in[j], sizeof in[j]);
 				//Data[0] = 0xA0;
-				Data[0] = 0x01 + 0x04 * j + i * 0x16;
-				Data[1] = 0x01;
+				//Data[0] = 0x01 + 0x04 * j + i * 0x16;
+				//Data[1] = 0x01;
+				//Data[0]= 0x00;
+				//Data[1] = 0x01 + 0x04 * j + i * 0x16;
+				uint16_t address= 0x05 + 0x05 * j + i * 0x16;
+				Data[0]= (address >>8);
+				Data[1] = address;
+
 				Data[2] = Data2[0];
 				Data[3] = Data2[1];
 				Data[4] = Data2[2];
