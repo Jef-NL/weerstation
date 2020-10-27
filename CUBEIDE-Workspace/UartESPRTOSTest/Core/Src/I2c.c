@@ -94,7 +94,7 @@ int Read_Sensor_20(uint8_t sensoradres, uint16_t sensAddress) {
 	if (HAL_I2C_IsDeviceReady(&hi2c1, sensAddress, 2, 1000) == HAL_ERROR) {
 
 		HAL_UART_Transmit(&huart2, (uint8_t*) "I2c error\n",
-				sizeof("I2c error\n"), 100);
+				sizeof("I2c error ,bmp sensor\n"), 100);
 		//return "ERROR";
 	} else {
 		uint8_t Data[10];
@@ -119,6 +119,14 @@ int Read_Sensor_20(uint8_t sensoradres, uint16_t sensAddress) {
 	}
 	return 0;
 }
+/**
+ * @brief Read the external EEPROM, only address 0
+ *
+ *
+ * @param  cycles_counter: the address of the cycles_counter variable.
+ * @param  input: The address of the stored struct.
+ * @retval double: Pressure value
+ */
 
 void readFlash_cycles(int *cycles_counter, SensorData *input) {
 	uint8_t Data[10];
@@ -135,7 +143,14 @@ void readFlash_cycles(int *cycles_counter, SensorData *input) {
 	HAL_UART_Transmit(&huart2, (uint8_t*) Data3, strlen(Data3), 100);
 
 }
-
+/**
+ * @brief Read the external EEPROM, all address if used excepted of address 0.
+ *
+ *
+ * @param  cycles_counter: the address of the cycles_counter variable.
+ * @param  input: The address of the stored struct.
+ * @retval double: Pressure value
+ */
 void readFlash_Measure_DATA(int *cycles_counter, SensorData *input) {
 	int i=*cycles_counter;
 	float g[4];
@@ -157,10 +172,17 @@ void readFlash_Measure_DATA(int *cycles_counter, SensorData *input) {
 	input[i].L = g[3];
 
 }
+/**
+ * @brief Write external EEPROM, write the new data and the cycles_counter
+ *
+ * @param  cycles_counter: the address of the cycles_counter variable.
+ * @param  input: The address of the stored struct.
+ * @retval double: Pressure value
+ */
 void writeFlash(int *cycles_counter, SensorData *input) {
 	char Data3[10];
 	if (HAL_I2C_IsDeviceReady(&hi2c1, 0xA1, 2, 1000) == HAL_ERROR) {
-		strcpy(Data3, "neee\n");
+		strcpy(Data3, "ERROR With External EEPROM\n");
 		HAL_UART_Transmit(&huart2, (uint8_t*) Data3, strlen(Data3), 100);
 		//return "ERROR";
 	} else {

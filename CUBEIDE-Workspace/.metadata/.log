@@ -4562,3 +4562,141 @@ java.lang.RuntimeException
 	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
 	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
 	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+
+!ENTRY org.eclipse.egit.core 4 0 2020-10-23 15:59:16.087
+!MESSAGE An exception occurred during push on URI https://github.com/Jef-NL/weerstation: https://github.com/Jef-NL/weerstation: not authorized
+!STACK 0
+org.eclipse.jgit.errors.TransportException: https://github.com/Jef-NL/weerstation: not authorized
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:540)
+	at org.eclipse.jgit.transport.TransportHttp.openPush(TransportHttp.java:436)
+	at org.eclipse.jgit.transport.PushProcess.execute(PushProcess.java:127)
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1335)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:191)
+	at org.eclipse.egit.ui.internal.push.PushJob.performJob(PushJob.java:86)
+	at org.eclipse.egit.ui.internal.jobs.RepositoryJob.run(RepositoryJob.java:59)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.egit.ui 4 0 2020-10-23 15:59:16.105
+!MESSAGE Can't connect to any repository: https://github.com/Jef-NL/weerstation (https://github.com/Jef-NL/weerstation: not authorized)
+
+!ENTRY org.eclipse.egit.core 4 0 2020-10-23 15:59:24.851
+!MESSAGE An exception occurred during push on URI https://github.com/Jef-NL/weerstation: https://github.com/Jef-NL/weerstation: not authorized
+!STACK 0
+org.eclipse.jgit.errors.TransportException: https://github.com/Jef-NL/weerstation: not authorized
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:540)
+	at org.eclipse.jgit.transport.TransportHttp.openPush(TransportHttp.java:436)
+	at org.eclipse.jgit.transport.PushProcess.execute(PushProcess.java:127)
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1335)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:191)
+	at org.eclipse.egit.ui.internal.push.ConfirmationPage$2.run(ConfirmationPage.java:211)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+!SESSION 2020-10-24 23:01:10.138 -----------------------------------------------
+eclipse.buildId=Version 1.4.0
+java.version=1.8.0_252
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=nl_NL
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2020-10-24 23:01:18.133
+!MESSAGE Log4j initialized with config file C:\Users\quinn\Desktop\weerstation\CUBEIDE-Workspace\.metadata\.log4j.xml
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-10-24 23:01:22.069
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\quinn'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2020-10-24 23:01:23.184
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 4 4 2020-10-24 23:01:23.777
+!MESSAGE com.st.stm32cube.ide.mcu.ide/META-INF/version/build_ref file not found, build reference will not be reported into properties
+!SESSION 2020-10-25 15:10:47.553 -----------------------------------------------
+eclipse.buildId=Version 1.4.0
+java.version=1.8.0_252
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=nl_NL
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2020-10-25 15:10:58.579
+!MESSAGE Log4j initialized with config file C:\Users\quinn\Desktop\weerstation\CUBEIDE-Workspace\.metadata\.log4j.xml
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-10-25 15:11:03.828
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\quinn'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2020-10-25 15:11:05.677
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 4 4 2020-10-25 15:11:06.264
+!MESSAGE com.st.stm32cube.ide.mcu.ide/META-INF/version/build_ref file not found, build reference will not be reported into properties
+!SESSION 2020-10-27 14:32:14.837 -----------------------------------------------
+eclipse.buildId=Version 1.4.0
+java.version=1.8.0_252
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=nl_NL
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2020-10-27 14:32:35.677
+!MESSAGE Log4j initialized with config file C:\Users\quinn\Desktop\weerstation\CUBEIDE-Workspace\.metadata\.log4j.xml
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-10-27 14:32:40.796
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\quinn'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2020-10-27 14:32:42.773
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 4 4 2020-10-27 14:32:43.356
+!MESSAGE com.st.stm32cube.ide.mcu.ide/META-INF/version/build_ref file not found, build reference will not be reported into properties
+!SESSION 2020-10-27 14:54:46.319 -----------------------------------------------
+eclipse.buildId=Version 1.4.0
+java.version=1.8.0_252
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=nl_NL
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2020-10-27 14:54:55.594
+!MESSAGE Log4j initialized with config file C:\Users\quinn\Desktop\weerstation\CUBEIDE-Workspace\.metadata\.log4j.xml
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-10-27 14:54:58.968
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\quinn'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2020-10-27 14:55:00.020
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 4 4 2020-10-27 14:55:00.044
+!MESSAGE com.st.stm32cube.ide.mcu.ide/META-INF/version/build_ref file not found, build reference will not be reported into properties
+!SESSION 2020-10-27 16:24:46.719 -----------------------------------------------
+eclipse.buildId=Version 1.4.0
+java.version=1.8.0_252
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=nl_NL
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2020-10-27 16:24:53.906
+!MESSAGE Log4j initialized with config file C:\Users\quinn\Desktop\weerstation\CUBEIDE-Workspace\.metadata\.log4j.xml
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-10-27 16:24:57.778
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\quinn'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2020-10-27 16:24:58.720
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 4 4 2020-10-27 16:24:59.324
+!MESSAGE com.st.stm32cube.ide.mcu.ide/META-INF/version/build_ref file not found, build reference will not be reported into properties
