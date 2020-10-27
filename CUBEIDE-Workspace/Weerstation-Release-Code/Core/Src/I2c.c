@@ -152,7 +152,7 @@ void readFlash_cycles(int *cycles_counter, SensorData *input) {
  * @retval double: Pressure value
  */
 void readFlash_Measure_DATA(int *cycles_counter, SensorData *input) {
-	int i=*cycles_counter;
+	int i = *cycles_counter;
 	float g[4];
 	uint8_t Data[10];
 	HAL_Delay(10);

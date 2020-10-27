@@ -507,8 +507,8 @@ void StartDefaultTask(void const *argument) {
 						sensorData[j].L, sensorData[j].minutes_expired);
 				i++;
 
-				if(i== missed_cycles ){
-					j=10;
+				if (i == missed_cycles) {
+					j = 10;
 				}
 
 			}
