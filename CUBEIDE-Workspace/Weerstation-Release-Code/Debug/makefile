@@ -34,24 +34,24 @@ endif
 
 # Add inputs and outputs from these tool invocations to the build variables 
 EXECUTABLES += \
-UartESPRTOSTest.elf \
+Weerstation-Release-Code.elf \
 
 SIZE_OUTPUT += \
 default.size.stdout \
 
 OBJDUMP_LIST += \
-UartESPRTOSTest.list \
+Weerstation-Release-Code.list \
 
 OBJCOPY_BIN += \
-UartESPRTOSTest.bin \
+Weerstation-Release-Code.bin \
 
 
 # All Target
-all: UartESPRTOSTest.elf secondary-outputs
+all: Weerstation-Release-Code.elf secondary-outputs
 
 # Tool invocations
-UartESPRTOSTest.elf: $(OBJS) $(USER_OBJS) C:\Users\quinn\Desktop\weerstation\CUBEIDE-Workspace\UartESPRTOSTest\STM32F030R8TX_FLASH.ld
-	arm-none-eabi-gcc -o "UartESPRTOSTest.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m0 -T"C:\Users\quinn\Desktop\weerstation\CUBEIDE-Workspace\UartESPRTOSTest\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="UartESPRTOSTest.map" -Wl,--gc-sections -static -u _printf_float --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Weerstation-Release-Code.elf: $(OBJS) $(USER_OBJS) C:\Users\quinn\Desktop\weerstation\CUBEIDE-Workspace\Weerstation-Release-Code\STM32F030R8TX_FLASH.ld
+	arm-none-eabi-gcc -o "Weerstation-Release-Code.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m0 -T"C:\Users\quinn\Desktop\weerstation\CUBEIDE-Workspace\Weerstation-Release-Code\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Weerstation-Release-Code.map" -Wl,--gc-sections -static -u _printf_float --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
@@ -60,13 +60,13 @@ default.size.stdout: $(EXECUTABLES)
 	@echo 'Finished building: $@'
 	@echo ' '
 
-UartESPRTOSTest.list: $(EXECUTABLES)
-	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "UartESPRTOSTest.list"
+Weerstation-Release-Code.list: $(EXECUTABLES)
+	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "Weerstation-Release-Code.list"
 	@echo 'Finished building: $@'
 	@echo ' '
 
-UartESPRTOSTest.bin: $(EXECUTABLES)
-	arm-none-eabi-objcopy  -O binary $(EXECUTABLES) "UartESPRTOSTest.bin"
+Weerstation-Release-Code.bin: $(EXECUTABLES)
+	arm-none-eabi-objcopy  -O binary $(EXECUTABLES) "Weerstation-Release-Code.bin"
 	@echo 'Finished building: $@'
 	@echo ' '
 

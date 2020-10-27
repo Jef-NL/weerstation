@@ -1,5 +1,5 @@
 
-UartESPRTOSTest.elf:     file format elf32-littlearm
+Weerstation-Release-Code.elf:     file format elf32-littlearm
 
 Sections:
 Idx Name          Size      VMA       LMA       File off  Algn

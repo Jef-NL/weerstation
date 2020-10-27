@@ -1,6 +1,6 @@
-ESP-Wireless-v1.c:35:6:espInit	24	static
-ESP-Wireless-v1.c:56:6:espConnect	40	static
-ESP-Wireless-v1.c:112:6:tcpConnect	40	static
-ESP-Wireless-v1.c:173:6:tcpSend	200	static
-ESP-Wireless-v1.c:253:6:consoleSend	16	static
-ESP-Wireless-v1.c:264:6:clearChar	24	static
+ESP-Wireless-v1.c:34:6:espInit	24	static
+ESP-Wireless-v1.c:55:6:espConnect	40	static
+ESP-Wireless-v1.c:115:6:tcpConnect	40	static
+ESP-Wireless-v1.c:180:6:tcpSend	200	static
+ESP-Wireless-v1.c:266:6:consoleSend	16	static
+ESP-Wireless-v1.c:277:6:clearChar	24	static

@@ -1,3 +1,2 @@
-standBy.c:9:6:resetStandBy	8	static
-standBy.c:17:6:startStandBy	8	static
-standBy.c:21:6:startSleep	8	static
+standBy.c:26:6:resetStandBy	8	static
+standBy.c:42:6:startStandBy	8	static

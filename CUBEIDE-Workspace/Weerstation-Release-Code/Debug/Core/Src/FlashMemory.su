@@ -1,2 +1,0 @@
-FlashMemory.c:10:6:Flash_WriteData	56	static
-FlashMemory.c:41:9:Flash_ReadData	40	static

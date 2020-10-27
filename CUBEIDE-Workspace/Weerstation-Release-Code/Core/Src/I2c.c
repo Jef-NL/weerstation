@@ -101,16 +101,16 @@ int Read_Sensor_20(uint8_t sensoradres, uint16_t sensAddress) {
 		Data[5] = sensoradres;
 		HAL_I2C_Master_Transmit(&hi2c1, sensAddress, (uint8_t*) &Data[5],
 		I2C_MEMADD_SIZE_8BIT, 1000);
-		HAL_Delay(200);
+		HAL_Delay(1);
 		HAL_I2C_Master_Receive(&hi2c1, sensAddress, (uint8_t*) &Data[0],
 		I2C_MEMADD_SIZE_8BIT, 1000);
-		HAL_Delay(200);
+		HAL_Delay(1);
 		HAL_I2C_Master_Receive(&hi2c1, sensAddress |= 0x01, (uint8_t*) &Data[1],
 		I2C_MEMADD_SIZE_8BIT, 1000);
-		HAL_Delay(100);
+		HAL_Delay(1);
 		HAL_I2C_Master_Transmit(&hi2c1, sensAddress, (uint8_t*) &Data[5],
 		I2C_MEMADD_SIZE_8BIT, 1000);
-		HAL_Delay(100);
+		HAL_Delay(1);
 		HAL_I2C_Master_Receive(&hi2c1, sensAddress, (uint8_t*) &Data[3],
 		I2C_MEMADD_SIZE_8BIT, 1000);
 		Data2 = (((Data[0] << 8) + Data[1]) << 4) + (Data[3] >> 3);
@@ -155,22 +155,21 @@ void readFlash_Measure_DATA(int *cycles_counter, SensorData *input) {
 	int i = *cycles_counter;
 	float g[4];
 	uint8_t Data[10];
-	HAL_Delay(10);
+	HAL_Delay(1);
 	for (int j = 0; j < 4; j++) {
 		uint16_t address = 0x05 + 0x05 * j + i * 0x20;
 		Data[0] = (address >> 8);
 		Data[1] = address;
 		HAL_I2C_Master_Transmit(&hi2c1, 0xA1, (uint8_t*) &Data, 2, 1000);
-		HAL_Delay(10);
+		HAL_Delay(1);
 		HAL_I2C_Master_Receive(&hi2c1, 0xA0, (uint8_t*) &Data, 4, 1000);
-		HAL_Delay(10);
+		HAL_Delay(1);
 		memcpy(&g[j], Data, sizeof g[j]);
 	}
 	input[i].T = g[0];
 	input[i].H = g[1];
 	input[i].A = g[2];
 	input[i].L = g[3];
-
 }
 /**
  * @brief Write external EEPROM, write the new data and the cycles_counter
@@ -209,7 +208,7 @@ void writeFlash(int *cycles_counter, SensorData *input) {
 			Data[3] = Data2[1];
 			Data[4] = Data2[2];
 			Data[5] = Data2[3];
-			HAL_Delay(10);
+			HAL_Delay(1);
 			HAL_I2C_Master_Transmit(&hi2c1, 0xA1, (uint8_t*) &Data, 6, 1000);
 		}
 	}
