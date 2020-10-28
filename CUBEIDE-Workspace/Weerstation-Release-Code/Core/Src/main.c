@@ -521,15 +521,26 @@ void StartDefaultTask(void const * argument)
 	if (Sensor_Read_status == 2 && Connection_Server_status == 2) {
 
 		int i = 0;
-		while (i < missed_cycles) {
+		//while (i < missed_cycles) {
+		while (i < 500) {
 			for (int j = 0; j < 10; j++) {
 				readFlash_Measure_DATA(&j, &sensorData);
 				sensorData[j].minutes_expired = missed_cycles - i;
-				tcpSend(sensorData[j].T, sensorData[j].H, sensorData[j].A,
-						sensorData[j].L, sensorData[j].minutes_expired);
+				//tcpSend(sensorData[j].T, sensorData[j].H, sensorData[j].A,
+						//sensorData[j].L, sensorData[j].minutes_expired);
+				tcpSend(1,1,1,1,1);
 				i++;
-
-				if (i == missed_cycles) {
+				char text[10];
+				itoa(i, text, 10);
+				consoleSend(text);
+				//if (i == missed_cycles) {
+				if (i % 90==0) {
+					HAL_Delay(1000);
+					int Connection45 =espConnect("Quinnvanderschaar", "test1234");
+					HAL_Delay(5000);
+					Connection45 = tcpConnect("192.168.178.80", "80");
+				}
+					if (i == 150) {
 					j = 10;
 				}
 

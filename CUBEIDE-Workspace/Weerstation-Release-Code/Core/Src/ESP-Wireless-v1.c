@@ -215,7 +215,7 @@ bool tcpSend(float temp, float humid, float pressure, float lux, int missedCyl) 
 	snprintf(sendBuffer, sizeof(sendBuffer), "AT+CIPSEND=%d\r\n", dataLength);
 
 	// Update User
-	consoleSend("Sending HTTP Post...\n");
+	//consoleSend("Sending HTTP Post...\n");
 
 	// Send commands
 	HAL_UART_Transmit(&huart1, (uint8_t*) sendBuffer, strlen(sendBuffer), 10);// Send start command
@@ -238,7 +238,7 @@ bool tcpSend(float temp, float humid, float pressure, float lux, int missedCyl) 
 
 	// Receive answer
 	uartRet = HAL_UART_Receive_IT(&huart1, (uint8_t*) receiveBuffer, 200);
-	tickdelay = HAL_GetTick() + 2000;
+	tickdelay = HAL_GetTick()+150 ;
 	while (strstr(receiveBuffer, "200 OK") == 0 && HAL_GetTick() <= tickdelay)
 		;		// Hold for read
 
@@ -246,11 +246,11 @@ bool tcpSend(float temp, float humid, float pressure, float lux, int missedCyl) 
 	if (uartRet != HAL_ERROR) {
 		if (strstr(receiveBuffer, "200 OK")) {
 			// Update User
-			consoleSend("Success\n");
+		consoleSend("Success\n");
 			return true;
 		} else {
 			// Update User
-			consoleSend("Failed\n");
+		consoleSend("Failed\n");
 			return false;
 		}
 	}
@@ -265,7 +265,7 @@ bool tcpSend(float temp, float humid, float pressure, float lux, int missedCyl) 
  */
 void consoleSend(char *message) {
 	HAL_UART_Transmit(&huart2, (uint8_t*) message, strlen(message), 10);
-	HAL_Delay(10);
+
 }
 
 /**
