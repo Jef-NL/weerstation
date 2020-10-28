@@ -379,7 +379,7 @@ static void MX_RTC_Init(void)
   */
   sAlarm.AlarmTime.Hours = 0x0;
   sAlarm.AlarmTime.Minutes = 0x1;
-  sAlarm.AlarmTime.Seconds = 0x0;
+  sAlarm.AlarmTime.Seconds = 0x09;
   sAlarm.AlarmTime.SubSeconds = 0x0;
   sAlarm.AlarmTime.DayLightSaving = RTC_DAYLIGHTSAVING_NONE;
   sAlarm.AlarmTime.StoreOperation = RTC_STOREOPERATION_RESET;
@@ -521,26 +521,24 @@ void StartDefaultTask(void const * argument)
 	if (Sensor_Read_status == 2 && Connection_Server_status == 2) {
 
 		int i = 0;
-		//while (i < missed_cycles) {
-		while (i < 500) {
+		while (i < missed_cycles) {
 			for (int j = 0; j < 10; j++) {
 				readFlash_Measure_DATA(&j, &sensorData);
 				sensorData[j].minutes_expired = missed_cycles - i;
-				//tcpSend(sensorData[j].T, sensorData[j].H, sensorData[j].A,
-						//sensorData[j].L, sensorData[j].minutes_expired);
-				tcpSend(1,1,1,1,1);
+				tcpSend(sensorData[j].T, sensorData[j].H, sensorData[j].A,
+						sensorData[j].L, sensorData[j].minutes_expired);
+
 				i++;
 				char text[10];
 				itoa(i, text, 10);
 				consoleSend(text);
-				//if (i == missed_cycles) {
 				if (i % 90==0) {
 					HAL_Delay(1000);
 					int Connection45 =espConnect("Quinnvanderschaar", "test1234");
 					HAL_Delay(5000);
 					Connection45 = tcpConnect("192.168.178.80", "80");
 				}
-					if (i == 150) {
+					if (i == missed_cycles) {
 					j = 10;
 				}
 

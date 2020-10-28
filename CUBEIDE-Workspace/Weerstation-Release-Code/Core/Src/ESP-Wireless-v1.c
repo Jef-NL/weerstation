@@ -238,7 +238,7 @@ bool tcpSend(float temp, float humid, float pressure, float lux, int missedCyl) 
 
 	// Receive answer
 	uartRet = HAL_UART_Receive_IT(&huart1, (uint8_t*) receiveBuffer, 200);
-	tickdelay = HAL_GetTick()+150 ;
+	tickdelay = HAL_GetTick()+200 ;
 	while (strstr(receiveBuffer, "200 OK") == 0 && HAL_GetTick() <= tickdelay)
 		;		// Hold for read
 

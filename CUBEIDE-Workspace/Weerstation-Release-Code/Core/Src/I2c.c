@@ -159,7 +159,7 @@ void readFlash_Measure_DATA(int *cycles_counter, SensorData *input) {
 	for (int j = 0; j < 4; j++) {
 		uint16_t address = 0x05 + 0x05 * j + i * 0x20;
 		Data[0] = (address >> 8);
-		Data[1] = address;
+		Data[1] = address ;
 		HAL_I2C_Master_Transmit(&hi2c1, 0xA1, (uint8_t*) &Data, 2, 1000);
 		HAL_Delay(1);
 		HAL_I2C_Master_Receive(&hi2c1, 0xA0, (uint8_t*) &Data, 4, 1000);
@@ -208,7 +208,7 @@ void writeFlash(int *cycles_counter, SensorData *input) {
 			Data[3] = Data2[1];
 			Data[4] = Data2[2];
 			Data[5] = Data2[3];
-			HAL_Delay(1);
+			HAL_Delay(5);
 			HAL_I2C_Master_Transmit(&hi2c1, 0xA1, (uint8_t*) &Data, 6, 1000);
 		}
 	}
