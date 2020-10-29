@@ -59,8 +59,6 @@ double Read_Pressure_Sensor() {
 	P = P + (var1 + var2 + (double)dig_value_P7) / 16;
 
 
-
-
 	return P;
 }
 

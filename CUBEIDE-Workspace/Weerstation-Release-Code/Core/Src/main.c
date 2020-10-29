@@ -379,7 +379,7 @@ static void MX_RTC_Init(void)
   */
   sAlarm.AlarmTime.Hours = 0x0;
   sAlarm.AlarmTime.Minutes = 0x1;
-  sAlarm.AlarmTime.Seconds = 0x09;
+  sAlarm.AlarmTime.Seconds = 0x13;
   sAlarm.AlarmTime.SubSeconds = 0x0;
   sAlarm.AlarmTime.DayLightSaving = RTC_DAYLIGHTSAVING_NONE;
   sAlarm.AlarmTime.StoreOperation = RTC_STOREOPERATION_RESET;
@@ -536,7 +536,7 @@ void StartDefaultTask(void const * argument)
 					HAL_Delay(1000);
 					int Connection45 =espConnect("Quinnvanderschaar", "test1234");
 					HAL_Delay(5000);
-					Connection45 = tcpConnect("192.168.178.80", "80");
+					Connection45 = tcpConnect("database.baars.cloud", "8124");
 				}
 					if (i == missed_cycles) {
 					j = 10;
@@ -610,7 +610,7 @@ void ConnectToServer(void const * argument)
 	if (Connection_Server_status == 0) {
 		Connection = espConnect("Quinnvanderschaar", "test1234");
 		HAL_Delay(10);
-		Connection = tcpConnect("192.168.178.80", "80");
+		Connection = tcpConnect("database.baars.cloud", "8124");
 		HAL_Delay(10);
 		if (Connection == 1) {
 			Connection_Server_status = 2;
