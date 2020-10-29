@@ -99,21 +99,19 @@ int Read_Sensor_20(uint8_t sensoradres, uint16_t sensAddress) {
 	} else {
 		uint8_t Data[10];
 		Data[5] = sensoradres;
+		HAL_Delay(200);
 		HAL_I2C_Master_Transmit(&hi2c1, sensAddress, (uint8_t*) &Data[5],
 		I2C_MEMADD_SIZE_8BIT, 1000);
-		HAL_Delay(1);
+		HAL_Delay(200);
 		HAL_I2C_Master_Receive(&hi2c1, sensAddress, (uint8_t*) &Data[0],
 		I2C_MEMADD_SIZE_8BIT, 1000);
-		HAL_Delay(1);
-		HAL_I2C_Master_Receive(&hi2c1, sensAddress |= 0x01, (uint8_t*) &Data[1],
+		HAL_Delay(200);
+		HAL_I2C_Master_Receive(&hi2c1, sensAddress, (uint8_t*) &Data[1],
 		I2C_MEMADD_SIZE_8BIT, 1000);
-		HAL_Delay(1);
-		HAL_I2C_Master_Transmit(&hi2c1, sensAddress, (uint8_t*) &Data[5],
+		HAL_Delay(200);
+		HAL_I2C_Master_Receive(&hi2c1, sensAddress, (uint8_t*) &Data[2],
 		I2C_MEMADD_SIZE_8BIT, 1000);
-		HAL_Delay(1);
-		HAL_I2C_Master_Receive(&hi2c1, sensAddress, (uint8_t*) &Data[3],
-		I2C_MEMADD_SIZE_8BIT, 1000);
-		Data2 = (((Data[0] << 8) + Data[1]) << 4) + (Data[3] >> 3);
+		Data2 = (((Data[0] << 8) + Data[1]) << 4) + (Data[2] >> 3);
 
 		return Data2;
 	}
