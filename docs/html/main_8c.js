@@ -1,6 +1,5 @@
 var main_8c =
 [
-    [ "SensorData", "struct_sensor_data.html", "struct_sensor_data" ],
     [ "ConnectToServer", "main_8c.html#a25e843614870ff7a2659ec259bf81b69", null ],
     [ "Error_Handler", "main_8c.html#a1730ffe1e560465665eb47d9264826f9", null ],
     [ "HAL_TIM_PeriodElapsedCallback", "main_8c.html#a8a3b0ad512a6e6c6157440b68d395eac", null ],
@@ -19,5 +18,5 @@ var main_8c =
     [ "missed_cycles", "main_8c.html#ae86650c57ece68fc7927ffcb8921562b", null ],
     [ "Read_T_H_A_L_SeHandle", "main_8c.html#adb07421658c61f5e9867c68a88069f21", null ],
     [ "Sensor_Read_status", "main_8c.html#a21cee1c3f77dbe8fb3c052da60f630ed", null ],
-    [ "sensorData", "main_8c.html#ad9024641141aeafa0e975c57a2a275bf", null ]
+    [ "sensorData", "main_8c.html#a7e8a5ca37c0edd9dd5e5db3c295ea7ee", null ]
 ];

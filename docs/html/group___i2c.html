@@ -102,6 +102,15 @@ Functions</h2></td></tr>
 <tr class="memitem:gad241c6fb723469c78aa798bcc4e194d1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i2c.html#gad241c6fb723469c78aa798bcc4e194d1">Read_Sensor_20</a> (uint8_t sensoradres, uint16_t sensAddress)</td></tr>
 <tr class="memdesc:gad241c6fb723469c78aa798bcc4e194d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the i2c bus.  <a href="group___i2c.html#gad241c6fb723469c78aa798bcc4e194d1">More...</a><br /></td></tr>
 <tr class="separator:gad241c6fb723469c78aa798bcc4e194d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga21ddb94856f3986b23d2ec17a58ec39d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i2c.html#ga21ddb94856f3986b23d2ec17a58ec39d">readFlash_cycles</a> (int *cycles_counter, SensorData *input)</td></tr>
+<tr class="memdesc:ga21ddb94856f3986b23d2ec17a58ec39d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the external EEPROM, only address 0.  <a href="group___i2c.html#ga21ddb94856f3986b23d2ec17a58ec39d">More...</a><br /></td></tr>
+<tr class="separator:ga21ddb94856f3986b23d2ec17a58ec39d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5c7ecc908c3fb03b0e62e4b8b03542f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i2c.html#ga5c7ecc908c3fb03b0e62e4b8b03542f5">readFlash_Measure_DATA</a> (int *cycles_counter, SensorData *input)</td></tr>
+<tr class="memdesc:ga5c7ecc908c3fb03b0e62e4b8b03542f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the external EEPROM, all address if used excepted of address 0.  <a href="group___i2c.html#ga5c7ecc908c3fb03b0e62e4b8b03542f5">More...</a><br /></td></tr>
+<tr class="separator:ga5c7ecc908c3fb03b0e62e4b8b03542f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3b0aaf6a5e50644499a6970c26e15669"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i2c.html#ga3b0aaf6a5e50644499a6970c26e15669">writeFlash</a> (int *cycles_counter, SensorData *input)</td></tr>
+<tr class="memdesc:ga3b0aaf6a5e50644499a6970c26e15669"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write external EEPROM, write the new data and the cycles_counter.  <a href="group___i2c.html#ga3b0aaf6a5e50644499a6970c26e15669">More...</a><br /></td></tr>
+<tr class="separator:ga3b0aaf6a5e50644499a6970c26e15669"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>All I2c functions to read the sensors </p>
@@ -223,6 +232,135 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">sensoradres</td><td>address van slave-address </td></tr>
     <tr><td class="paramname">sensAddress</td><td>address van register-address </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">double</td><td>Pressure value </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga21ddb94856f3986b23d2ec17a58ec39d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga21ddb94856f3986b23d2ec17a58ec39d">&#9670;&nbsp;</a></span>readFlash_cycles()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void readFlash_cycles </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>cycles_counter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SensorData *&#160;</td>
+          <td class="paramname"><em>input</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read the external EEPROM, only address 0. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cycles_counter</td><td>the address of the cycles_counter variable. </td></tr>
+    <tr><td class="paramname">input</td><td>The address of the stored struct. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">double</td><td>Pressure value </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga5c7ecc908c3fb03b0e62e4b8b03542f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5c7ecc908c3fb03b0e62e4b8b03542f5">&#9670;&nbsp;</a></span>readFlash_Measure_DATA()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void readFlash_Measure_DATA </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>cycles_counter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SensorData *&#160;</td>
+          <td class="paramname"><em>input</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read the external EEPROM, all address if used excepted of address 0. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cycles_counter</td><td>the address of the cycles_counter variable. </td></tr>
+    <tr><td class="paramname">input</td><td>The address of the stored struct. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">double</td><td>Pressure value </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga3b0aaf6a5e50644499a6970c26e15669"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3b0aaf6a5e50644499a6970c26e15669">&#9670;&nbsp;</a></span>writeFlash()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void writeFlash </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>cycles_counter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SensorData *&#160;</td>
+          <td class="paramname"><em>input</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write external EEPROM, write the new data and the cycles_counter. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cycles_counter</td><td>the address of the cycles_counter variable. </td></tr>
+    <tr><td class="paramname">input</td><td>The address of the stored struct. </td></tr>
   </table>
   </dd>
 </dl>
